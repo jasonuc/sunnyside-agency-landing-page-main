@@ -5,14 +5,17 @@ font-family: 'Fraunces', serif; */
     display: grid;
     width: 100%;
     min-height: 1000px;
-    grid-template-rows: 50px 500px repeat(2, 480px) 500px;
+    /* grid-template-rows: 50px 500px repeat(3, 480px) 650px 300px; */
+    grid-template-rows: 50px 500px repeat(3, 480px) 650px 500px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
                         "header header"
                         "main main"
                         "a b"
                         "c d"
-                        "e f";
+                        "e f"
+                        "g g"
+                        "gallery gallery";
     /* border: 1px solid black; */
 }
 
@@ -153,15 +156,25 @@ main #arrow-down {
 .bottom-text {
     display: inline-flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+.bottom-text h3 {
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 23px;
+    margin-top: 330px;
+    margin-bottom: 15px;
 }
 
 .bottom-text p {
     width: 350px;
     font-family: 'Barlow', sans-serif;
     /* color: hsl(167, 40%, 24%); */
-    color: hsl(213, 9%, 39%);
+    /* border: 1px solid black; */
     line-height: 1.5;
+    text-align: center;
 }
 .e {
     background-image: url(../images/desktop/image-graphic-design.jpg);
@@ -179,4 +192,108 @@ main #arrow-down {
     background-size: cover;
     grid-area: f;
     color: hsl(198, 62%, 26%);
+}
+
+.g {
+    grid-area: g;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+.g h3 {
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-top: 150px;
+    font-weight: 300;
+    color: hsl(232, 10%, 55%);
+}
+
+.g .testimonials {
+    /* font-family: 'Barlow', sans-serif; */
+    display: flex;
+    width: 79%;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+
+.g .client {
+    display: inline-flex;
+    flex-direction: column;
+    width: 310px;
+    /* height: 450px; */
+    height: 350px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.g .client .profile-pic {
+    display: block;
+    border-radius: 50%;
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.g .client .client-testimonial {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.5;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.g .client .client-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.g .client .job-position {
+    font-family: 'Barlow', sans-serif;
+    color: hsl(232, 10%, 55%);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.gallery {
+    grid-area: gallery;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-image {
+    width: 25%;
+}
+
+.gallery .first {
+    background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .second {
+    background-image: url(../images/desktop/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .third {
+    background-image: url(../images/desktop/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .fourth {
+    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
