@@ -70,6 +70,10 @@ main #arrow-down {
     margin-top: 90px;
 }
 
+.a, .d {
+    overflow-y: scroll;
+}
+
 .a {
     padding: 100px;
     grid-area: a;
@@ -319,7 +323,7 @@ main #arrow-down {
     justify-content: space-around;
 }
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1190px) {
         
     .g h3 {
         margin-top: 20px;
